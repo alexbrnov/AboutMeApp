@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		0EA1B3F12AD099600053D7AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA1B3F02AD099600053D7AB /* AppDelegate.swift */; };
 		0EA1B3F32AD099600053D7AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA1B3F22AD099600053D7AB /* SceneDelegate.swift */; };
-		0EA1B3F52AD099600053D7AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA1B3F42AD099600053D7AB /* ViewController.swift */; };
 		0EA1B3F82AD099600053D7AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EA1B3F62AD099600053D7AB /* Main.storyboard */; };
 		0EA1B3FA2AD099610053D7AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EA1B3F92AD099610053D7AB /* Assets.xcassets */; };
 		0EA1B3FD2AD099610053D7AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EA1B3FB2AD099610053D7AB /* LaunchScreen.storyboard */; };
+		0EA1B4052AD09EDE0053D7AB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA1B4042AD09EDE0053D7AB /* LoginViewController.swift */; };
+		0EA1B4072AD09EF00053D7AB /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA1B4062AD09EF00053D7AB /* GreetingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0EA1B3ED2AD099600053D7AB /* AboutMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA1B3F02AD099600053D7AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EA1B3F22AD099600053D7AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0EA1B3F42AD099600053D7AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0EA1B3F72AD099600053D7AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EA1B3F92AD099610053D7AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EA1B3FC2AD099610053D7AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EA1B3FE2AD099610053D7AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EA1B4042AD09EDE0053D7AB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0EA1B4062AD09EF00053D7AB /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				0EA1B3F02AD099600053D7AB /* AppDelegate.swift */,
 				0EA1B3F22AD099600053D7AB /* SceneDelegate.swift */,
-				0EA1B3F42AD099600053D7AB /* ViewController.swift */,
+				0EA1B4042AD09EDE0053D7AB /* LoginViewController.swift */,
+				0EA1B4062AD09EF00053D7AB /* GreetingViewController.swift */,
 				0EA1B3F62AD099600053D7AB /* Main.storyboard */,
 				0EA1B3F92AD099610053D7AB /* Assets.xcassets */,
 				0EA1B3FB2AD099610053D7AB /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EA1B3F52AD099600053D7AB /* ViewController.swift in Sources */,
+				0EA1B4052AD09EDE0053D7AB /* LoginViewController.swift in Sources */,
 				0EA1B3F12AD099600053D7AB /* AppDelegate.swift in Sources */,
 				0EA1B3F32AD099600053D7AB /* SceneDelegate.swift in Sources */,
+				0EA1B4072AD09EF00053D7AB /* GreetingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
