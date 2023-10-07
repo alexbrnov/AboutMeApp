@@ -47,7 +47,7 @@
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption1"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="forgotUsernameButtonTapped" destination="DKD-bD-tJB" eventType="touchUpInside" id="HBa-FP-U6Z"/>
+                                                    <action selector="forgotUserNameButtonTapped" destination="DKD-bD-tJB" eventType="touchUpInside" id="HBa-FP-U6Z"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpc-cE-PeL">
@@ -108,6 +108,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgw-L0-EXG">
                                         <rect key="frame" x="0.0" y="376.5" width="115" height="47.5"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Log out">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                         </buttonConfiguration>
@@ -119,7 +120,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Nc-jS-P3H"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="1ib-dQ-BBy" firstAttribute="centerY" secondItem="8wX-DF-PMm" secondAttribute="centerY" id="1xL-JD-RNc"/>
                             <constraint firstItem="1ib-dQ-BBy" firstAttribute="centerX" secondItem="8wX-DF-PMm" secondAttribute="centerX" id="dJP-fX-AhV"/>
@@ -141,7 +142,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5AT-2v-tm8" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zbQ-tr-7Io">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -155,11 +156,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
