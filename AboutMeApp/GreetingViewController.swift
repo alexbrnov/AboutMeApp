@@ -7,12 +7,17 @@
 
 import UIKit
 
-class GreetingViewController: UIViewController {
+final class GreetingViewController: UIViewController {
     // MARK: - IB Outlets
+    
+    @IBOutlet var greetingLabel: UILabel!
+    
+    var user: String!
     
     // MARK: - Overrides Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        greetingLabel.text = "Hello, \(user ?? "")!"
 
        
     }
