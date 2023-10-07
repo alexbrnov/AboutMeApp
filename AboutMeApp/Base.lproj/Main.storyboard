@@ -32,7 +32,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOR-Aa-ntZ">
                                         <rect key="frame" x="0.0" y="118" width="256" height="34.5"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title=" Log In"/>
                                         <connections>
                                             <segue destination="OG8-79-PfG" kind="presentation" identifier="" modalPresentationStyle="fullScreen" id="PYT-Xc-Lf9"/>
                                         </connections>
