@@ -13,8 +13,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     
     // MARK: - Private properties
-    private let user = "user"
-    private let pass = "pass"
+    private let user = User.getInfo()
     
     // MARK: - Overrides methods
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -22,7 +21,7 @@ final class LoginViewController: UIViewController {
         view.endEditing(true)
     }
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        guard userNameTextField.text == user, passwordTextField.text == pass else {
+        guard userNameTextField.text == user.username, passwordTextField.text == user.password else {
             showAlert(
                 withTitle: "Wrong login or pass",
                 andMessage: "Please enter correct values",
@@ -32,21 +31,40 @@ final class LoginViewController: UIViewController {
         }
         return true
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        userNameTextField.text = user.username
+        passwordTextField.text = user.password
+        
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let greetingVC = segue.destination as? GreetingViewController else { return }
-        greetingVC.user = user
+        let tabBarController = segue.destination as? UITabBarController
+        tabBarController?.viewControllers?.forEach { viewController in
+            if let greetingVC = viewController as? GreetingViewController {
+                greetingVC.user = user
+            } else if let navigationVC = viewController as? UINavigationController {
+                let profileVC = navigationVC.topViewController
+                guard let profileVC = profileVC as? ProfileViewController else {
+                    return
+                }
+                profileVC.user = user
+            }
+        }
     }
     
     // MARK: - IB Actions
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        passwordTextField.text = ""
+        passwordTextField.text = user.password
+        userNameTextField .text = user.username
+        
     }
     
     @IBAction func helpButtonTapped(_ sender: UIButton) {
         if sender.tag == 1 {
-            showAlert(withTitle: "Oops",andMessage: "Try \(user)")
+            showAlert(withTitle: "Oops",andMessage: "Try \(user.username)")
         } else {
-            showAlert(withTitle: "Oops", andMessage: "Try \(pass)")
+            showAlert(withTitle: "Oops", andMessage: "Try \(user.password)")
         }
     }
     

@@ -12,7 +12,7 @@ final class GreetingViewController: UIViewController {
     @IBOutlet var greetingLabel: UILabel!
     
     // MARK: - Public Properties
-    var user: String!
+    var user: User!
     
     // MARK: - Private Properties
     private let firstBgColor = UIColor(red: 0.514, green: 0.643, blue: 0.831, alpha: 1)
@@ -21,7 +21,7 @@ final class GreetingViewController: UIViewController {
     // MARK: - Overrides Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        greetingLabel.text = "Hello, \(user ?? "")!"
+        greetingLabel.text = "Hello, \(user.username)!"
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
