@@ -13,4 +13,11 @@ final class BioViewController: UIViewController {
     
     //MARK: - Public Properties
     var user: User!
+    
+    // MARK: - Overrides Methods
+       override func viewDidLoad() {
+           super.viewDidLoad()
+           bioLabel.text = user.personalInfo.bio
+       }
+       
 }
