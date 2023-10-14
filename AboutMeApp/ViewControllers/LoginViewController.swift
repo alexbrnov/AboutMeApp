@@ -16,10 +16,18 @@ final class LoginViewController: UIViewController {
     private let user = User.getInfo()
     
     // MARK: - Overrides methods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        userNameTextField.text = user.username
+        passwordTextField.text = user.password
+        
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
+    
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         guard userNameTextField.text == user.username, passwordTextField.text == user.password else {
             showAlert(
@@ -32,12 +40,6 @@ final class LoginViewController: UIViewController {
         return true
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        userNameTextField.text = user.username
-        passwordTextField.text = user.password
-        
-    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let tabBarController = segue.destination as? UITabBarController
         tabBarController?.viewControllers?.forEach { viewController in
@@ -45,9 +47,7 @@ final class LoginViewController: UIViewController {
                 greetingVC.user = user
             } else if let navigationVC = viewController as? UINavigationController {
                 let profileVC = navigationVC.topViewController
-                guard let profileVC = profileVC as? ProfileViewController else {
-                    return
-                }
+                guard let profileVC = profileVC as? ProfileViewController else { return }
                 profileVC.user = user
             }
         }

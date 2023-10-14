@@ -19,5 +19,4 @@ final class BioViewController: UIViewController {
            super.viewDidLoad()
            bioLabel.text = user.personalInfo.bio
        }
-       
 }

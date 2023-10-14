@@ -135,7 +135,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YBe-cf-0FY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="ea3-NO-8Cd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4556.25" y="-263.02816901408448"/>
+            <point key="canvasLocation" x="3608" y="-263"/>
         </scene>
         <!--Name-->
         <scene sceneID="ZLD-Jb-IzX">
@@ -270,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YvJ-yV-vjw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7057.5" y="-263.02816901408448"/>
+            <point key="canvasLocation" x="5438" y="-263"/>
         </scene>
         <!--Profile-->
         <scene sceneID="nwU-24-OtY">
@@ -289,7 +289,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gfa-hz-POk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5805" y="-263"/>
+            <point key="canvasLocation" x="4500" y="-263"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rFc-q3-JWH">
@@ -298,6 +298,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="jfd-SQ-JXT"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HqL-Yw-7VT">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -308,7 +309,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h1G-6H-4QT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5201" y="-1169"/>
+            <point key="canvasLocation" x="4500" y="-1169"/>
         </scene>
         <!--Bio View Controller-->
         <scene sceneID="dVD-Vj-0Rw">
@@ -340,7 +341,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJy-Hv-i86" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7976" y="-263"/>
+            <point key="canvasLocation" x="6354" y="-263"/>
         </scene>
     </scenes>
     <resources>
@@ -350,7 +351,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

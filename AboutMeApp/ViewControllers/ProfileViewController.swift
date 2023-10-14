@@ -20,17 +20,14 @@ final class ProfileViewController: UIViewController {
     @IBOutlet var companyLabel: UILabel!
     @IBOutlet var positionLabel: UILabel!
     @IBOutlet var hobbyLabel: UILabel!
+    
     // MARK: - Public Properties
     var user: User!
     
     // MARK: - Overrides Methods
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let bioVC = segue.destination as? BioViewController
-        bioVC?.user = user
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = user.personalInfo.firstname
+        title = user.personalInfo.firstname
 
         profileImage.image = UIImage(named: user.photo)
         nameLabel.text = user.personalInfo.getFullName
@@ -39,5 +36,9 @@ final class ProfileViewController: UIViewController {
         positionLabel.text = user.personalInfo.position
         hobbyLabel.text = user.personalInfo.hobby
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let bioVC = segue.destination as? BioViewController
+        bioVC?.user = user
+    }
 }
